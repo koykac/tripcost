@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script.js"></script>
+    <title>여행경비 계산기</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+           
+           <a href="index.html"> <img id="logoImage" src="images/title.png" height="100px"> </a>
+
+
+      
+           <span class='green_window'>
+            <input id=text type="text" class='input_text' name="search" onkeydown="enterSearch()"/></span>
+            <input type="button" class='sch_smit' value="검색" onclick="myFunction()"/>
+
+
+       
+
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li class="menu">
+                        <a><img src="images/asia.png" width="120px" alt="아시아"/></a>
+                        <ul class="hide">
+                            <li class="sub2"><a>대만</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">타이페이</a></li>
+                                <li>가오슝</li>
+                                <li>타이중</li>
+                            </ul>
+
+                            <li class="sub2"><a>중국</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">베이징</a></li>
+                                <li>상하이</li>
+                                <li>시안</li>
+                                <li>청도</li>
+                                <li>충칭</li>
+                            </ul>
+                            <li class="sub2"><a>일본</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">도쿄</a></li>
+                                <li>오사카</li>
+                                <li>후쿠오카</li>
+                                <li>삿포로</li>
+                                <li>나고야</li>
+                            </ul>
+                            <li class="sub2"><a>홍콩</a></li> 
+                            <li class="sub2"><a>마카오</a></li> 
+
+                            <li class="sub2"><a>베트남</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">하노이</a></li>
+                                <li>호치민</li>
+                                <li>다낭</li>
+                                <li>사파</li>
+                               
+                            </ul>
+
+                            <li class="sub2"><a>라오스</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">비엔티안</a></li>
+                                <li>루앙프라방</li>
+                                <li>방비엥</li>
+                               
+                            </ul>
+
+                            <li class="sub2"><a>캄보디아</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">프놈펜</a></li>
+                                <li>시엠립</li>
+                                
+                               
+                            </ul>
+
+                            <li class="sub2"><a>미얀마</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">양곤</a></li>
+                                <li>만달레야</li>
+                                
+                               
+                            </ul>
+                            
+                            <li class="sub2"><a>태국</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">방콕</a></li>
+                                <li>치앙마이</li>
+                                <li>팟타야</li>
+                                <li>푸켓</li>
+                                <li>후아힌</li>
+                            </ul>
+                            <li class="sub2"><a>말레이시아</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">쿠알라룸푸르</a></li>
+                                <li>코타키나발루</li>
+                                <li>페낭</li>
+                                <li>조호바루</li>
+                                <li>랑카위</li>
+                            </ul>
+
+                            <li class="sub2"><a>싱가포르</a></li> 
+
+                            <li class="sub2"><a>인도네시아</a></li> 
+                            <ul class="hide2">
+                                <li> <a href="thailand_bangkok.html">자카르타</a></li>
+                                <li>족자카르타</li>
+                                <li>발리</li>
+                        
+                            </ul>
+
+                        </ul>
+                    </li>
+             
+                    <li class="menu">
+                        <a><img src="images/europe.png" width="120px" alt="유럽"/></a>
+                        <ul class="hide">
+                            <li>메뉴2-1</li>
+                            <li>메뉴2-2</li>
+                            <li>메뉴2-3</li>
+                            <li>메뉴2-4</li>
+                            <li>메뉴2-5</li>
+                            <li>메뉴2-6</li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a><img src="images/namerica.png" width="120px" alt="북아메리카"/></a>
+                        <ul class="hide">
+                            <li>메뉴1-1</li>
+                            <li>메뉴1-2</li>
+                            <li>메뉴1-3</li>
+                            <li>메뉴1-4</li>
+                            <li>메뉴1-5</li>
+                            <li>메뉴1-6</li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a><img src="images/samerica.png" width="120px" alt="남아메리카"/></a>
+                        <ul class="hide">
+                            <li>메뉴1-1</li>
+                            <li>메뉴1-2</li>
+                            <li>메뉴1-3</li>
+                            <li>메뉴1-4</li>
+                            <li>메뉴1-5</li>
+                            <li>메뉴1-6</li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a><img src="images/oceania.png" width="120px" alt="오세아니아"/></a>
+                        <ul class="hide">
+                            <li>메뉴1-1</li>
+                            <li>메뉴1-2</li>
+                            <li>메뉴1-3</li>
+                            <li>메뉴1-4</li>
+                            <li>메뉴1-5</li>
+                            <li>메뉴1-6</li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a><img src="images/africa.png" width="120px" alt="아프리카"/></a>
+                        <ul class="hide">
+                            <li>메뉴1-1</li>
+                            <li>메뉴1-2</li>
+                            <li>메뉴1-3</li>
+                            <li>메뉴1-4</li>
+                            <li>메뉴1-5</li>
+                            <li>메뉴1-6</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            
+
+            
+            </nav>
+            <main>
+
+                
+              
+<section class="layout-article">
+    <ul class="box-article">
+        <li class="list-article wow flipInY" data-wow-delay="1.5s">
+            <article class="box-article"><a href="">
+                <h1>1Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+                <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+                <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+          </li>
+      </li>
+      <li class="list-article wow flipInY" data-wow-delay="0.3s">
+        <article class="box-article"><a href="">
+            <h1>2Gummies fruitcake cupcake candy tart</h1>
+            <figure><img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=51953479f1ce3812d6fc2bc7d82ecea4" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+      <li class="list-article wow flipInY" data-wow-delay="0.6s">
+        <article class="box-article"><a href="">
+            <h1>3Gummies fruitcake cupcake candy tart sesame snaps apple.</h1>
+            <figure><img src="https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6fbde3ee76bc8f49caf14c89778b2210" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+      <li class="list-article wow flipInY" data-wow-delay="1.5s">
+        <article class="box-article"><a href="">
+            <h1>Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+            <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+      <li class="list-article wow flipInY" data-wow-delay="1.5s">
+        <article class="box-article"><a href="">
+            <h1>Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+            <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+      <li class="list-article wow flipInY" data-wow-delay="1.5s">
+        <article class="box-article"><a href="">
+            <h1>Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+            <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+
+      <li class="list-article wow flipInY" data-wow-delay="1.5s">
+        <article class="box-article"><a href="">
+            <h1>Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+            <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+
+      <li class="list-article wow flipInY" data-wow-delay="1.5s">
+        <article class="box-article"><a href="">
+            <h1>Gummies fruitcake cupcake candy tart sesame snaps apple pie</h1>
+            <figure><img src="https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;s=6faf705d60f9804d03079755fb323a9a" alt=""/></figure>
+            <p>Sweet roll lemon drops chupa chups. Candy canes icing soufflé ice cream tiramisu jelly-o macaroon sweet roll chocolate cake. Cake bear claw gummies topping candy canes liquorice muffin halvah.</p></a></article>
+      </li>
+    </ul>
+  </section><a class="credit" href="http://tlab.co.id/" target="_blank"></a>
+    
+
+            </main>
+            <aside>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-2967297173009718"
+                     data-ad-slot="1705324681"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </aside>
+        </section>
+        <footer>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-2967297173009718"
+                     data-ad-slot="1705324681"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+            Copyright 2021.<a href="index.html">여행경비 계산기</a>All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
