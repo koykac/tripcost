@@ -47,16 +47,7 @@
 		<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 <!--복사방지 스크립트-->
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-	   $("#zzside").load("zzside.html")
-	  /* id 지정을 통해서도 가능합니다. 
-	   $("#header").load("header.html #navbar")
-	   */       
-	});
-</script>  
 
 
 	</head>
@@ -352,19 +343,53 @@
 		
 	
 	
-			
-<div id="zzside">
+<section>
+	<header class="major">
+		<h2>인기 글</h2>
+	</header>
+		<div class="mini-posts">
+			<article>
+				<a href="euamsterdam.html" class="image"><img src="../../images/euamsterdam/amsterdam01.jpg" alt="" /></a>
+				<a href="euuk.html" class="image"><p>암스테르담 여행 경비</p></a>
+			</article>
 
 
+			<article>
+				<a href="eulondon.html" class="image"><img src="../../images/eulondon/london01.jpg" alt="" /></a>
+				<a href="eulondon.html" class="image"><p>영국 런던 여행경비</p></a>
+			</article>
 			
-</div>
+		</div>
+			<!-- <ul class="actions">
+				<li><a href="euuk.html" class="button">More</a></li>
+			</ul> -->
+</section>
+
+
+
+<section>
+	<header class="major">
+		<h2>연락처</h2>
+	</header>
 		
-</div>
-	
-	
-</div>
-	
+		<ul class="contact">
+			<li class="icon solid fa-envelope">
+				<a href="mailto:tripcal.co.kr@gmail.com">tripcal.co.kr@gmail.com
 
+				</a>
+			</li>
+		</ul>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+	<p class="copyright">&copy; tripcal.co.kr All rights reserved. 
+							
+</footer>
+
+</div>
+</div>
+			</div>
 
 	
 	<!-- Scripts -->
