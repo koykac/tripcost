@@ -95,7 +95,7 @@ body, input, select, textarea {
   color: #292933;
   font-family: 'Roboto', sans-serif;
   font-size: 13pt;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.65; }
 
   
@@ -134,13 +134,13 @@ p {
   margin: 0 0 2em 0; 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,h7 {
   color: #3d4449;
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Nanum Myeongjo', monospace;
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,h7 a {
     color: inherit;
     text-decoration: none;
     border-bottom: 0; }
@@ -160,10 +160,17 @@ h4 {
   font-size: 1.1em; }
 
 h5 {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+ }
 
 h6 {
-  font-size: 0.7em; }
+  font-size: 0.9em;
+  font-family: 'Nanum Gothic Coding', monospace; }
+
+  h7 {
+    font-size: 0.8em;
+    font-family: 'Nanum Myeongjo', monospace; 
+  }
 
 @media screen and (max-width: 1680px) {
   h1 {
@@ -1189,6 +1196,22 @@ input[type="radio"] + label:before {
     border-radius: 0;
     padding: 0; }
 
+
+    /* Box */
+.box2 {
+  border-radius: 0.8em;
+  border: solid 1px rgba(170, 179, 184, 0.75);
+  margin-bottom: 2em;
+  padding: 1.5em; }
+  .box > :last-child,
+  .box > :last-child > :last-child,
+  .box > :last-child > :last-child > :last-child {
+    margin-bottom: 0; }
+  .box.alt {
+    border: 0;
+    border-radius: 0;
+    padding: 0; }
+
 /* Icon */
 .icon {
   text-decoration: none;
@@ -1231,6 +1254,7 @@ input[type="radio"] + label:before {
     float: left;
     padding: 0 1.5em 1em 0;
     top: 0.25em; }
+  
   .image.right {
     float: right;
     padding: 0 0 1em 1.5em;
@@ -1403,10 +1427,17 @@ ul.contact {
 ul.pagination {
   cursor: default;
   list-style: none;
+  text-align: center;
+  
+
+ 
+  
   padding-left: 0; }
   ul.pagination li {
     display: inline-block;
     padding-left: 0;
+    
+    
     vertical-align: middle; }
     ul.pagination li > .page {
       -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1417,6 +1448,7 @@ ul.pagination {
       border-radius: 0.375em;
       display: inline-block;
       font-size: 0.8em;
+      
       font-weight: 600;
       height: 2em;
       line-height: 2em;
@@ -1440,6 +1472,8 @@ ul.pagination {
       display: none; }
     ul.pagination li:first-child {
       padding-right: 0; } }
+
+    
 
 /* Table */
 .table-wrapper {
@@ -1482,12 +1516,14 @@ table {
     table.alt tfoot {
       border-top: 0; }
 
+
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-.button {
+.button,.nolink {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -1503,7 +1539,7 @@ button,
   color: #f56a6a !important;
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  font-family:'Roboto', sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
@@ -1580,9 +1616,11 @@ button,
   button.disabled,
   button:disabled,
   .button.disabled,
-  .button:disabled {
+  .button:disabled,.disabled {
     pointer-events: none;
     opacity: 0.25; }
+
+   
 
 /* Mini Posts */
 .mini-posts article {
@@ -2096,8 +2134,9 @@ button,
   #header .logo {
     border-bottom: 0;
     color: inherit;
-    font-family: 'Sunflower', sans-serif;
-    font-size: 2.125em; }
+    font-family:'Nanum Gothic Coding', sans-serif;
+    /* font-family: 'Sunflower', sans-serif; */
+    font-size: 2.225em; }
   #header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {

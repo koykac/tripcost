@@ -15,6 +15,7 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+  
 }
 .fa-lg {
   font-size: 1.33333em;
@@ -30,8 +31,12 @@
 .fa-1x {
   font-size: 1em;
 }
+.fa-13x {
+  font-size: 1.3em;
+}
 .fa-2x {
   font-size: 2em;
+  
   
 }
 .fa-2x-navy {
