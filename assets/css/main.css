@@ -146,12 +146,12 @@ h1, h2, h3, h4, h5, h6,h7 {
     border-bottom: 0; }
 
 h1 {
-  font-size: 3.0em;
+  font-size: 1.6em;
   margin: 0 0 0.5em 0;
   line-height: 1.3; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.4em; }
 
 h3 {
   font-size: 1.25em; }
@@ -174,18 +174,18 @@ h6 {
 
 @media screen and (max-width: 1680px) {
   h1 {
-    font-size: 2.3em; } }
+    font-size: 1.5em; } }
 
 @media screen and (max-width: 980px) {
   h1 {
-    font-size: 2.1em; } }
+    font-size: 1.5em; } }
 
 @media screen and (max-width: 736px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1.4; }
   h2 {
-    font-size: 1.5em; } }
+    font-size: 1.3em; } }
 
 sub {
   font-size: 0.8em;
@@ -2136,7 +2136,7 @@ button,
     color: inherit;
     font-family:'Nanum Gothic Coding', sans-serif;
     /* font-family: 'Sunflower', sans-serif; */
-    font-size: 2.225em; }
+    font-size: 2.0em; }
   #header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {
